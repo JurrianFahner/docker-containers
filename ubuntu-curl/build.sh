@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-date_tag=$(date +%Y%M%d)
+date_tag=$(date +%Y%m%d)
 
 docker build --pull \
              -q \

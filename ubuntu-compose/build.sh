@@ -2,7 +2,7 @@
 
 docker_compose_version=${2:-1.29.0}
 
-date_tag=$(date +%Y%M%d)
+date_tag=$(date +%Y%m%d)
 
 docker build --pull \
              -q \
