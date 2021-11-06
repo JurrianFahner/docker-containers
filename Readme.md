@@ -10,3 +10,9 @@ All images are based on ubuntu, because it can easily be used by a human. By def
 
 [0]: ./ubuntu-curl
 [1]: ./ubuntu-compose
+
+## build-all
+In order to build all docker containers, the following packages are needed: 
+- docker
+- curl
+- jq

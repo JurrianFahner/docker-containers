@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-docker_compose_version=${2:-1.29.0}
+docker_compose_version=$(curl -sL https://api.github.com/repos/docker/compose/releases/latest | jq -r ".tag_name")
 
 date_tag=$(date +%Y%m%d)
 
