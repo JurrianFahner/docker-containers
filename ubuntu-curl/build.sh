@@ -8,5 +8,5 @@ docker build --pull \
              -t ${1}ubuntu-curl:$date_tag \
              $(dirname $(realpath $0))
 
-docker push -q ${1}ubuntu-compose:latest
-docker push -q ${1}ubuntu-compose:$date_tag
+docker push -q ${1}ubuntu-curl:latest
+docker push -q ${1}ubuntu-curl:$date_tag
