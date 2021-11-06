@@ -8,5 +8,5 @@ All images are based on ubuntu, because it can easily be used by a human. By def
 | ubuntu-curl    | [readme][0]        | image with curl installed           |
 | ubuntu-compose | [readme][1]        | image with docker-compose installed |
 
-[0]: ./ubuntu-curl/Readme.md
-[1]: ./ubuntu-compose/Readme.md
+[0]: ./ubuntu-curl
+[1]: ./ubuntu-compose
