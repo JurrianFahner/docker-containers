@@ -5,7 +5,7 @@ This image has also been deployed to docker hub: [ensignprojects/ubuntu-curl](ht
 
 ## build image
 ```shell
-docker build -t ubuntu-compose:latest --build-arg compose_version=1.29.0 .
+docker build -t ubuntu-curl:latest .
 ```
 
 ## pull image
