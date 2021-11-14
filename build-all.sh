@@ -16,3 +16,6 @@ echo "-- ubuntu-compose"
 
 echo "-- ubuntu-curl"
 ./ubuntu-curl/build.sh $1
+
+echo "-- ubuntu-dnsutils"
+./ubuntu-dnsutils/build.sh $1
