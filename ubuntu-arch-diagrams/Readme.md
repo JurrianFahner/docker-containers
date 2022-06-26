@@ -1,18 +1,3 @@
-# how to render diagrams
-Perform the following steps:
-1. install [graphiz](https://www.graphviz.org)
-2. install [pycharm](https://www.jetbrains.com/pycharm/)
-3. install [python 3.x](https://www.python.org/)
-4. install packages in [requirements.txt](docker/requirements.txt)
-
-
-The docker image that is build in this repo is manually pushed to docker hub, 
-the image can be found by this reference: `ensignprojects/ubuntu-arch-diagrams`
-
-
-
-
-
 # ubuntu-arch-diagrams
 The ubuntu-arch-diagrams container has the package [graphiz](https://www.graphviz.org) installed. This container can be used in circumstances that you want to generate documentation for example when to create pdfs for architecture diagrams (can be achieved with [pandoc](https://pandoc.org/)), for example in a build pipeline as one of the steps. 
 
