@@ -10,6 +10,3 @@ docker build --pull \
              -t ${1}ubuntu-compose:$date_tag \
              --build-arg compose_version=$docker_compose_version \
              $(dirname $(realpath $0))
-
-docker push -q ${1}ubuntu-compose:latest
-docker push -q ${1}ubuntu-compose:$date_tag

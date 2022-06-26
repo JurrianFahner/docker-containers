@@ -11,11 +11,12 @@ fi
 
 echo "Build all containers"
 
-echo "-- ubuntu-compose"
-./ubuntu-compose/build.sh $1 "v2.1.0"
+date_tag=$(date +%Y%m%d)
 
-echo "-- ubuntu-curl"
-./ubuntu-curl/build.sh $1
+for folder in $(ls -1 | grep ubuntu) ; do
+    echo "-- ${folder}"
+    ./${folder}/build.sh $1
 
-echo "-- ubuntu-dnsutils"
-./ubuntu-dnsutils/build.sh $1
+    docker push -q ${1}${folder}:latest
+    docker push -q ${1}${folder}:$date_tag
+done

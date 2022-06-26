@@ -3,23 +3,32 @@ This repo contains dockerfiles of images that can be of great use within continu
 
 All images are based on ubuntu, because it can easily be used by a human. By default syntax highlighting is enabled when vim is installed. Also colors are enabled when listing files etc.
 
-| tool                 | documentation      | description                         |
-|:---------------------|:-------------------|-------------------------------------|
-| [ubuntu-compose][2]  | [readme][3]        | image with docker-compose installed |
-| [ubuntu-curl][0]     | [readme][1]        | image with curl installed           |
-| [ubuntu-dnsutils][4] | [readme][5]        | image with dnsutils installed       |
+| tool                          | documentation   | description                         |
+| :---------------------------- | :-------------- | :---------------------------------- |
+| [ubuntu-arch-diagrams][suad1] | [readme][suad2] | image with graphiz and pandoc       |
+| [ubuntu-compose][suco1]       | [readme][suco2] | image with docker-compose installed |
+| [ubuntu-curl][sucu1]          | [readme][sucu2] | image with curl installed           |
+| [ubuntu-dnsutils][sudn1]      | [readme][sudn2] | image with dnsutils installed       |
 
 
-[0]: https://hub.docker.com/r/ensignprojects/ubuntu-curl
-[1]: ./ubuntu-curl
-[2]: https://hub.docker.com/r/ensignprojects/ubuntu-compose
-[3]: ./ubuntu-compose
-[4]: https://hub.docker.com/r/ensignprojects/ubuntu-dnsutils
-[5]: ./ubuntu-dnsutils
-
-
-## build-all
+## prerequisites
 In order to build all docker containers, the following packages are needed: 
 - docker
 - curl
 - jq
+
+## build all containers
+Run command below to install all docker containers: 
+```bash
+./build-all.sh docker.io/ensignprojects/
+```
+
+[suad1]: ./ubuntu-arch-diagrams
+[suad2]: https://hub.docker.com/r/ensignprojects/ubuntu-arch-diagrams
+[suco1]: ./ubuntu-curl
+[suco2]: https://hub.docker.com/r/ensignprojects/ubuntu-curl
+[sucu1]: ./ubuntu-compose
+[sucu2]: https://hub.docker.com/r/ensignprojects/ubuntu-compose
+[sudn1]: ./ubuntu-dnsutils
+[sudn2]: https://hub.docker.com/r/ensignprojects/ubuntu-dnsutils
+
