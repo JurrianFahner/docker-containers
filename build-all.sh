@@ -19,4 +19,5 @@ for folder in $(ls -1 | grep ubuntu) ; do
 
     docker push -q ${1}${folder}:latest
     docker push -q ${1}${folder}:$date_tag
+    docker rmi ${1}${folder}:$date_tag
 done
