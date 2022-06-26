@@ -23,12 +23,12 @@ Run command below to install all docker containers:
 ./build-all.sh docker.io/ensignprojects/
 ```
 
-[suad1]: ./ubuntu-arch-diagrams
-[suad2]: https://hub.docker.com/r/ensignprojects/ubuntu-arch-diagrams
-[suco1]: ./ubuntu-curl
-[suco2]: https://hub.docker.com/r/ensignprojects/ubuntu-curl
-[sucu1]: ./ubuntu-compose
-[sucu2]: https://hub.docker.com/r/ensignprojects/ubuntu-compose
-[sudn1]: ./ubuntu-dnsutils
-[sudn2]: https://hub.docker.com/r/ensignprojects/ubuntu-dnsutils
+[suad1]: https://hub.docker.com/r/ensignprojects/ubuntu-arch-diagrams
+[suad2]: ./ubuntu-arch-diagrams
+[suco1]: https://hub.docker.com/r/ensignprojects/ubuntu-curl
+[suco2]: ./ubuntu-curl
+[sucu1]: https://hub.docker.com/r/ensignprojects/ubuntu-compose
+[sucu2]: ./ubuntu-compose
+[sudn1]: https://hub.docker.com/r/ensignprojects/ubuntu-dnsutils
+[sudn2]: ./ubuntu-dnsutils
 
