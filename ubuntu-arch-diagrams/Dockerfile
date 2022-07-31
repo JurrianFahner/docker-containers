@@ -1,6 +1,7 @@
 FROM ubuntu
 COPY requirements.txt /work-bench/requirements.txt
 RUN apt-get update && \
+    apt upgrade -y && \
     DEBIAN_FRONTEND=noninteractive \
     TZ=Europe/Amsterdam \
     apt-get -y install python3 pip pandoc graphviz \
