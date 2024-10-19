@@ -8,7 +8,8 @@ RUN apt-get update && \
     texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra && \
     rm -rf /var/lib/apt/lists/*
 RUN cd /work-bench && \
-    python3 -m venv venv && \
-    . venv/bin/activate && \
+    python3 -m venv /opt/venv && \
+    . /opt/venv/bin/activate && \
     pip install -r requirements.txt && \
-    rm -rf /work-bench
+    rm -rf /work-bench && \ 
+    echo ". /opt/venv/bin/activate" >> ~/.bashrc
